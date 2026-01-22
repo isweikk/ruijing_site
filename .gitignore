@@ -8,9 +8,6 @@ venv/
 env/
 ENV/
 
-# MkDocs
-site/
-
 # IDE
 .vscode/
 .idea/

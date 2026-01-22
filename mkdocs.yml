@@ -1,0 +1,136 @@
+site_name: 锐境 - AI硬件领先者
+site_url: https://ruijing-ai.com
+site_description: AI智能硬件解决方案提供商
+site_author: 锐境 Team
+
+theme:
+  name: material
+  language: zh
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/robot
+  
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  
+  favicon: assets/favicon.png
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:ruijing-support@163.com
+      name: Email
+  
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - tags
+  - glightbox
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - 首页: index.md
+  - 产品服务:
+    - 产品概览: products/index.md
+    - AI解决方案: products/ai-solutions.md
+    - 技术平台: products/platform.md
+    - 案例展示: products/cases.md
+  - 技术文档:
+    - 快速开始: docs/getting-started.md
+    - API文档: docs/api.md
+    - 开发指南: docs/development.md
+    - 常见问题: docs/faq.md
+    - 博客:
+      - 最新动态: docs/blog/index.md
+  - 关于我们:
+    - 联系我们: about/index.md
+    - 团队成员: about/team.md
+
+copyright: Copyright &copy; 2026 锐境智能. All rights reserved.
